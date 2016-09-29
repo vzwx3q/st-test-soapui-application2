@@ -34,7 +34,7 @@
                   <version>LATEST</version>
                   <type>jar</type>
                   <overWrite>false</overWrite>
-                  <outputDirectory>${project.build.directory}/supertarget</outputDirectory>
+                  <outputDirectory>${project.build.directory}/target/dependency</outputDirectory>
                   <destFileName>sca_${project.artifactId}-${project.version}.jar</destFileName>
                 </artifactItem>
               </artifactItems>
