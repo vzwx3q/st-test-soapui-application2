@@ -34,7 +34,7 @@
                   <version>1.0-SNAPSHOT</version>
                   <type>jar</type>
                   <overWrite>false</overWrite>
-                  <outputDirectory>${project.build.directory}/target/dependency</outputDirectory>
+                  <outputDirectory>${project.build.directory}/dependency</outputDirectory>
                   <destFileName>sca_${project.artifactId}-${project.version}.jar</destFileName>
                 </artifactItem>
               </artifactItems>
