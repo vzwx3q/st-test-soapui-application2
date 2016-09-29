@@ -4,7 +4,7 @@
     <groupId>ravi.soa.comp</groupId>
     <artifactId>test-soapui-2</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>sar</packaging> 
+    <packaging>jar</packaging> 
    <parent>
         <groupId>com.oracle.soa</groupId>
         <artifactId>sar-common</artifactId>
@@ -12,7 +12,7 @@
         <relativePath></relativePath>
     </parent>
 	
-	<properties>
+    <properties>
         <!-- these parameters are used by the compile goal -->
     <!--    <scac.input.dir>${project.basedir}/SOA/</scac.input.dir>
         <scac.output.dir>${project.basedir}/target</scac.output.dir>
@@ -51,9 +51,9 @@
                 <artifactId>oracle-soa-plugin</artifactId>
                 <version>12.1.3-0-0</version>
                 <configuration>
-                    <compositeName>test-soa-project</compositeName>
+                    <compositeName>${project.artifactId}</compositeName>
                    <!-- <composite>${scac.input}</composite>-->
-                    <sarLocation>${basedir}/target/dependency/${project.artifactId}-${version}.jar</sarLocation>
+                    <sarLocation>${basedir}/target/dependency/sca_${project.artifactId}-${project.version}.jar</sarLocation>
                     <serverUrl>${serverUrl}</serverUrl>
                     <!-- note: compositeRevision is needed to package, revision is needed to undeploy -->
                   <!--  <compositeRevision>${composite.revision}</compositeRevision>
@@ -81,6 +81,5 @@
                 <extensions>true</extensions>
             </plugin>				
          </plugins>  
-     </build>  
-
+     </build>
 </project>
