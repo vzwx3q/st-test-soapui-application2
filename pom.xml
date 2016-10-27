@@ -8,5 +8,7 @@
     <modules>
         <!-- Add project modules -->
     	<module>test-soapui-2</module>
+        <module>helloworld2</module>
+
     </modules>
 </project>
